@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark: #1b1513;
+  --primary: #3b170d;
+  --primary-medium: #75342c;
+  --primary-darklight: #a46e5e;
+  --primary-light: #ceaaa0;
+  --primary-white: #fdf5e6;
+
+  --secondary: #240e0872;
+  --secondary-medium: #32181479;
+  --secondary-darklight: #a46e5e71;
+  --secondary-light: #ceaaa070;
+  --secondary-white: #fdf5e6676;
+
+  --error-color: #9e0909ea;
+  --text-on-dark: white;
+}
+
+body{
+  background-image:     
+  linear-gradient(
+      rgba(10, 5, 5, 0.621),
+      rgba(1, 0, 0, 0.617)
+    ),
+        url('../../../../public/images/bookish.png');
+  background-size: cover;
+  background-repeat: repeat-y;
+  box-shadow: 10px 8px 16px 0 rgba(0, 0, 0, 0.2), 10 16px 30px 0 rgba(0, 0, 0, 0.19);
+  min-height: 100vh;
+  margin: 0;
+  font-size: 1.7rem;
+  font-family: cursive;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+}
+  
+.defBtn {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+  border: 1px solid var(--primary-dark);
+  border-radius: 3px;
+  color: var(--text-on-dark);
+  cursor: pointer;
+}
+
+.defBtn:disabled{
+  background-color: color-mix(in srgb, var(--primary) 40%, white 60%);
+  cursor: not-allowed;
+}
+
+.defBtn:hover{
+  background-color: var(--primary);
+  border: 1px solid var(--primary-dark);
+  border-radius: 3px;
+  color: var(--text-on-dark);
+  opacity: 0.9;
+} 
+  
+.hidden {
+  display: none !important;
+}
+
+.brandForm {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+.brandForm .fullWidth {
+  grid-column: 1 / -1;
+}
+
+.brandForm .secondColumn {
+  grid-column-start: 2;
+}
+
+.brandForm .btn {
+  justify-self: start;
+}
+
+.brandForm > :is(label, span) {
+  align-self: center;
+  justify-self: end;
+}
+
+.brandForm :is(input:not([type='checkbox'], [type='radio']), textarea) {
+  padding: 0.5rem 0.5rem;
+
+  border: 1px solid var(--primary-dark);
+  border-radius: 7px;
+}
+
+.brandForm .fieldError {
+  color: var(--error-color);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+.brandForm section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.brandForm :is(input, textarea):has(+ .fieldError),
+.brandForm .passwordInput:has(+ .fieldError) > input {
+  border-color: var(--error-color);
+  color: var(--error-color);
+  outline-color: var(--error-color);
+}
+
+.brandForm label:has(+ input + .fieldError),
+.brandForm label:has(+ textarea + .fieldError),
+.brandForm label:has(+ .passwordInput + .fieldError) {
+  color: var(--error-color);
+}

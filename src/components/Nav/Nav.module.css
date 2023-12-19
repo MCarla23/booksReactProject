@@ -1,0 +1,31 @@
+.mainMenu {
+    display: flow-root;
+}
+  
+.mainMenu menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.382);
+}
+
+menu li{
+    font-size: 27px;
+    color: var(--primary-white);
+}
+  
+.navLink {
+    display: inline-block;
+    padding: 2rem 1.5rem;
+    color: var(--primary-white);
+    text-decoration: none;
+}
+
+.navLink:hover, .navLink.active {
+    color: var(--primary-light);
+}
+  
+.pushRight {
+    margin-left: auto;
+}

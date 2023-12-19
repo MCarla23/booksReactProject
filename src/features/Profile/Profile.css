@@ -1,0 +1,30 @@
+.category-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.category-label input{
+    height: fit-content;
+}
+
+.category-label p{
+    font-style: italic;
+    color: var(--primary-medium);
+    font-size: 2rem;
+}
+
+/* h2, h3, p{
+    margin: 0;
+} */
+
+h2{
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+button.btn{
+    width: 50%;
+    margin: auto;
+}

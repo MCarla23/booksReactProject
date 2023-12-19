@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "email": "m@m.com",
+      "password": "$2a$10$hCreMrdEcWmzhrYGl3UGNe3mlMqBTVSfQzdy6CL0tVaZB6aMubXFm",
+      "firstName": "Maria",
+      "lastName": "Carla",
+      "id": 1
+    },
+    {
+      "email": "mn@nm.com",
+      "password": "$2a$10$I6qwe/LTzZEe8nKdvm94cOOFNA4K3MldyopdeoZKCQHVG8W4TMFFy",
+      "firstName": "Mari",
+      "lastName": "Car",
+      "id": 2
+    },
+    {
+      "email": "abcd@efg",
+      "password": "$2a$10$kW4nbc6kJ0in2ST3NpVrluKOvoRje3P6zIn6F0eWgxz5wTXS7RrfG",
+      "firstName": "Bunica",
+      "lastName": "Bunicului",
+      "id": 3
+    },
+    {
+      "email": "m@nmama",
+      "password": "$2a$10$iD11HQjbZqFpVLRlA9fSZOiPaqR5aufnOhxnZrFORZ9wd8amuXBbG",
+      "firstName": "Mars",
+      "lastName": "Mak",
+      "id": 4
+    },
+    {
+      "email": "mcarla@gmail.com",
+      "password": "$2a$10$Rr4JNzufBk.XNKQ1ICrZ3uITV5QNfdUVPLh/YtZE7ro7G/fsjhp7C",
+      "firstName": "Maria",
+      "lastName": "Carla",
+      "id": 5
+    }
+  ],
+  "books": [
+    {
+      "cover": "https://covers.openlibrary.org/b/isbn/9780385533225-M.jpg",
+      "datePublished": "2023-12-05T22:00:00.000Z",
+      "description": "To be or not to be... in this world where you can not be what you want to be",
+      "isbn": "9780385533225",
+      "author": "J.S.W.",
+      "title": "Narnia",
+      "id": 1
+    }
+  ],
+  "authors": []
+}
