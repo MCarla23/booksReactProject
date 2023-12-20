@@ -10,5 +10,50 @@
 
 .buttons-container{
     display: flex;
+    gap: 2rem;
+    margin-top: 20px;
+}
+
+.book-details{
+    width: 80%;
+    color: var(--primary-dark);
+    padding: 1rem 4rem;
+
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    background-color: var(--primary-white);
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+
+.book-details h1{
+    font-size: 40px;
+}
+
+.book-details h2{
+    margin-bottom: 0;
+}
+
+.book-details h3{
+    margin: 30px 0;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: var(--primary-white);
+}
+.center-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container nav li a{
+    color: var(--primary-white);
+}
+
+.center-container > nav{
+    margin: 1.5rem auto;
 }
 

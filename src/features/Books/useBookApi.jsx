@@ -4,6 +4,7 @@ import { useAuthContext } from '../Auth/AuthContext';
 
 const relatedEntities = {
   authors: [],
+  categories: []
 };
 
 const getRelated = structuredClone(relatedEntities);
@@ -15,6 +16,7 @@ export function useBookApi(id, shouldRequestOnLoad = true) {
 
   const { get: getBooks, remove, post, patch } = useApi('books');
   ({ get: getRelated.authors } = useApi('authors'));
+  ({ get: getRelated.categories } = useApi('categories'));
 
   const getBook = useCallback(async () => {
     const data = await getBooks(null, id);
@@ -55,7 +57,6 @@ export function useBookApi(id, shouldRequestOnLoad = true) {
   }
 
   function updateBook(body) {
-    console.log(body);
     return patch(id, body, { accessToken });
   }
   return { data, related, deleteBook, addBook, updateBook, getBook };

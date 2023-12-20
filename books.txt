@@ -1,78 +1,19 @@
-{
-  "users": [
+"books": [
     {
-      "email": "m@m.com",
-      "password": "$2a$10$hCreMrdEcWmzhrYGl3UGNe3mlMqBTVSfQzdy6CL0tVaZB6aMubXFm",
-      "firstName": "Maria",
-      "lastName": "Carla",
+      "cover": "https://cdn4.libris.ro/img/pozeprod/16030/16029404-1.jpg",
+      "datePublished": "2008-12-06T22:00:00.000Z",
+      "description": "Four adventurous siblings--Peter, Susan, Edmund, and Lucy Pevensie--step through a wardrobe door and into the land of Narnia, a land frozen in eternal winter and enslaved by the power of the White Witch. But when almost all hope is lost, the return of the Great Lion, Aslan, signals a great change . . . and a great sacrifice.",
+      "isbn": "1234567890123",
+      "author": "C.S.Lewis",
+      "title": "The Chronicles of Narnia",
+      "categories": [
+        "1"
+      ],
       "id": 1
     },
-    {
-      "email": "mn@nm.com",
-      "password": "$2a$10$I6qwe/LTzZEe8nKdvm94cOOFNA4K3MldyopdeoZKCQHVG8W4TMFFy",
-      "firstName": "Mari",
-      "lastName": "Car",
-      "id": 2
-    },
-    {
-      "email": "abcd@efg",
-      "password": "$2a$10$kW4nbc6kJ0in2ST3NpVrluKOvoRje3P6zIn6F0eWgxz5wTXS7RrfG",
-      "firstName": "Bunica",
-      "lastName": "Bunicului",
-      "id": 3
-    },
-    {
-      "email": "m@nmama",
-      "password": "$2a$10$iD11HQjbZqFpVLRlA9fSZOiPaqR5aufnOhxnZrFORZ9wd8amuXBbG",
-      "firstName": "Mars",
-      "lastName": "Mak",
-      "id": 4
-    },
-    {
-      "email": "mcarla@gmail.com",
-      "password": "$2a$10$Rr4JNzufBk.XNKQ1ICrZ3uITV5QNfdUVPLh/YtZE7ro7G/fsjhp7C",
-      "firstName": "Maria",
-      "lastName": "Carla",
-      "id": 5
-    },
-    {
-      "email": "mc@mc.com",
-      "password": "$2a$10$S1z9RpNO8RsxToysQ5IwRe3iMPZZ321T0Icm3bZDCo5eZjgfoCgU6",
-      "firstName": "Maria",
-      "lastName": "Carla",
-      "id": 6
-    }
-  ],
-  "categories": [
-    {
-      "name": "Fantasy",
-      "id": 1
-    },
-    {
-      "name": "History",
-      "id": 2
-    },
-    {
-      "name": "Mystery",
-      "id": 3
-    },
-    {
-      "name": "Thriller",
-      "id": 4
-    },
-    {
-      "name": "Biography",
-      "id": 5
-    },
-    {
-      "name": "Crime",
-      "id": 6
-    }
-  ],
-  "books": [
     {
       "cover": "https://d29xot63vimef3.cloudfront.net/image/history-books/26-9.jpg",
-      "datePublished": "2007-04-06T22:00:00.000Z",
+      "datePublished": "2007-4-06T22:00:00.000Z",
       "description": "Dozens of maps provide a clear geography of great events, while timelines give the reader an ongoing sense of the passage of years and cultural interconnection. The result is an engrossing tapestry of human behavior from which we may draw conclusions about the direction of world events and the causes behind them.",
       "isbn": "9780393059748",
       "author": "Susan Wise Bauer",
@@ -108,17 +49,14 @@
     },
     {
       "cover": "https://cdn.waterstones.com/bookjackets/large/9780/0082/9780008239428.jpg",
-      "datePublished": "2017-09-14T21:00:00.000Z",
+      "datePublished": "2017-09-17T21:00:00.000Z",
       "description": "The book begins in 18th-century Cairo and follows Nahri, a talented orphan con woman who uses palm reading and sleight of hand to swindle Ottoman nobles, and has healing powers. During an exorcism, she accidentally summons a djinn warrior named Darayavahoush e-Afshin, \"Dara\" for short.",
       "isbn": "9781538456101",
       "author": "Shannon Chakraborty",
       "title": "City of Brass",
       "categories": [
-        "1",
-        "3"
+        "1"
       ],
       "id": 5
     }
-  ],
-  "authors": []
-}
+  ]

@@ -1,4 +1,6 @@
 {
     "/users*": "/600/users$1",
-    "/books*": "/600/books$1"
+    "/books*": "/600/books$1",
+    "/authors*": "/600/books$1",
+    "/categories*": "/600/books$1"
 }

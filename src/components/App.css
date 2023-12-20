@@ -98,13 +98,13 @@ body{
 .brandForm .fieldError {
   color: var(--error-color);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   margin: 0;
 }
 
 .brandForm section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .brandForm :is(input, textarea):has(+ .fieldError),
