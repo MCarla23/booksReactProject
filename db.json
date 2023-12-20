@@ -83,26 +83,16 @@
       "id": 2
     },
     {
-      "cover": "https://bookscouter.com/blog/wp-content/uploads/2022/09/his_7.jpg",
-      "datePublished": "2010-02-22T22:00:00.000Z",
-      "description": "The History of the Medieval World is a true world history, linking the great conflicts of Europe to the titanic struggles for power in India and Asia. In its pages, El Cid and Guanggaeto, Julian the Apostate and the Brilliant Emperor, Charles the Hammer and Krum the Bulgarian stand side by side. ",
-      "isbn": "9780393059755",
-      "author": "Susan Wise Bauer",
-      "title": "Medieval World",
-      "categories": [
-        "2"
-      ],
-      "id": 3
-    },
-    {
       "cover": "https://m.media-amazon.com/images/I/71gF3htXxZL._AC_UF1000,1000_QL80_.jpg",
-      "datePublished": "2013-10-07T21:00:00.000Z",
+      "datePublished": "2013-11-07T22:00:00.000Z",
       "description": "New threats appear, as the Ottomans emerge from a tiny Turkish village and the Mongols ride out of the East to set the world on fire. New currencies are forged, new weapons invented, and world-changing catastrophes alter the landscape: the Little Ice Age and the Great Famine kill millions; the Black Death, millions more. In the chaos of epoch-making events, the world restarts. ",
       "isbn": "9780393059762",
       "author": "Susan Wise Bauer",
-      "title": "Renaissance World",
+      "title": "Renaissance War",
       "categories": [
-        "2"
+        "2",
+        "5",
+        "6"
       ],
       "id": 4
     },

@@ -43,22 +43,23 @@ const { get: getCategories } = getApi('categories');
 
 export function BookDetails(){
     const { id } = useParams();
-    const { state } = useLocation();
+    // const { state } = useLocation();
     const { data: book, related, deleteBook, updateBook } = useBookApi(id);
     const navigate = useNavigate();
     const [edit, setEdit] = useState(false);
     
     async function handleDelete(e) {
         await deleteBook();
-        const path = state?.from ?? '/';
-        navigate('/books');
+        // const path = state?.from ?? '/';
+        
     }
 
 
     const {register, handleSubmit, formState: {errors}, reset} = useForm({resolver: yupResolver(managementScheme)});
     async function onSubmit(values) {
         const data = await updateBook(values).then(() => setEdit(!edit));
-        navigate(path);
+        window.location.reload();
+        // navigate(path);
     }
     const [categories, setCategories] = useState(null);
     useEffect(() => {
@@ -142,12 +143,7 @@ export function BookDetails(){
                                         const isChecked = related.categories.map(c => c.id).includes(cat.id);
                                         return(
                                             <label key={cat.id}>
-                                                { isChecked == true &&
-                                                    <input type="checkbox" value={cat.id} {...register('categories')} checked/>
-                                                }
-                                                { isChecked == false &&
-                                                    <input type="checkbox" value={cat.id} {...register('categories')}/>
-                                                }
+                                                <input type="checkbox" value={cat.id} {...register('categories')} defaultChecked={isChecked}/>
                                                 {cat.name}
                                             </label>
                                         )
@@ -171,8 +167,8 @@ export function BookDetails(){
                                 {errors.datePublished && (
                                     <p className="secondColumn fieldError">{errors.datePublished.message}</p>
                                 )}
-                                <div className='buttons-container'>
-                                    <Button variant="success" type="submit" onClick={handleSubmit(onSubmit)}>Save Changes</Button>
+                                <div className='buttons-container secondColumn'>
+                                    <Button variant="success" type="submit" onClick={handleSubmit(onSubmit)}>Save</Button>
                                     <Button variant="danger" onClick={() => setEdit(!edit)}>Cancel</Button>
                                 </div>
                             </form>

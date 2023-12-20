@@ -57,3 +57,10 @@
     margin: 1.5rem auto;
 }
 
+.details-container h1, .details-container h2{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+
