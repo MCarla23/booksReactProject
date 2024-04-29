@@ -1,5 +1,13 @@
 .mainMenu {
-    display: flow-root;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.sigla{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
 }
   
 .mainMenu menu {
@@ -7,23 +15,22 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    background-color: rgba(0, 0, 0, 0.382);
 }
 
 menu li{
     font-size: 27px;
-    color: var(--primary-white);
+    color: var(--primary-dark);
 }
   
 .navLink {
     display: inline-block;
     padding: 2rem 1.5rem;
-    color: var(--primary-white);
+    color: var(--primary-dark);
     text-decoration: none;
 }
 
 .navLink:hover, .navLink.active {
-    color: var(--primary-light);
+    color: var(--primary-dark);
 }
   
 .pushRight {

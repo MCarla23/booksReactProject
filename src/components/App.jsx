@@ -8,7 +8,7 @@ import {
   BookDetails, 
   Books,
   Profile,
-  Home,
+  LandingPage,
   Auth,
   AuthContextProvider,
   RequireAuth,
@@ -25,7 +25,7 @@ export function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="login" element={<Auth />} />
           <Route path="register" element={<Auth />} />
           <Route path="profile" element={

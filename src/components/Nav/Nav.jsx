@@ -3,6 +3,7 @@ import clsx from 'clsx';
 
 import styles from './Nav.module.css';
 import { useAuthContext } from '../../features/Auth/AuthContext';
+import sigla from '../../images/sigla.svg'
 
 function BrandNavLink({ children, ...props }) {
   return (
@@ -21,17 +22,18 @@ export function Nav() {
   const { user, logout } = useAuthContext();
   return (
     <nav className={styles.mainMenu}>
+      <img src={sigla} className={styles.sigla}/>
       <menu>
         <li>
-          <BrandNavLink to="/">Home</BrandNavLink>
+          <BrandNavLink to="/">Pricing</BrandNavLink>
         </li>
         <li>
-          <BrandNavLink to="books">See books</BrandNavLink>
+          <BrandNavLink to="books">Books</BrandNavLink>
         </li>
         <li>
-          <BrandNavLink to="addbook">New book</BrandNavLink>
+          <BrandNavLink to="addbook">About Us</BrandNavLink>
         </li>
-       
+        
         {user === null && (
           <>
             <li className={styles.pushRight}>
@@ -42,6 +44,9 @@ export function Nav() {
             </li>
           </>
         )}
+
+        
+
         {user && (
           <li className={styles.pushRight}>
             Welcome,<BrandNavLink to="profile">{user.firstName}!</BrandNavLink>{' '}

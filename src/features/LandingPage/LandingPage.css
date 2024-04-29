@@ -1,0 +1,50 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+}
+
+.title {
+    font-family: Petrona;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 56.4px;
+    text-align: center;
+    width: 50%;
+}
+
+.subtitle {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin: 10px 0 0 0;
+}
+
+.intro {
+    font-family: Petrona;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22.56px;
+    text-align: left;
+    background-color: var(--secondary-gold);
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 70px 0 30px 0;
+}
+
+button.startButton{
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin: 70px 0 30px 0;
+    border: 1px solid var(--primary-dark);
+}
+
+button.startButton:hover{
+    opacity: 0.8;
+}
