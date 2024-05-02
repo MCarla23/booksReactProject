@@ -7,6 +7,7 @@ export class UnauthorizedError extends Error {
 }
 
 async function handleServerResponse(res, action) {
+  console.log('response', res)
   const dataPromise = res.json();
   if (!res.ok) {
     const message = await dataPromise;
@@ -23,6 +24,7 @@ async function handleServerResponse(res, action) {
 }
 
 function getAuthHeader(token) {
+  console.log("token:",token)
   if (!token) {
     return {};
   }
@@ -56,14 +58,16 @@ export function getApi(resource) {
       searchStr += new URLSearchParams(search).toString();
     }
 
+    console.log("options:", options)
     options.headers = {
       ...options.headers,
       ...getAuthHeader(options.accessToken),
     };
+    options.method = 'GET';
 
     id = id !== null && id !== undefined ? `/${id}` : '';
 
-    delete options.accessToken;
+    // delete options.accessToken;
 
     return fetch(`${apiUrl}/${resource}${id}${searchStr}`, options).then(
         (res) => handleServerResponse(res, 'recived')

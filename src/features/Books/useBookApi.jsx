@@ -13,17 +13,19 @@ export function useBookApi(id, shouldRequestOnLoad = true) {
   const [data, setData] = useState(null);
   const [related, setRelated] = useState(structuredClone(relatedEntities));
   const { accessToken } = useAuthContext();
+  console.log("accessToken:", accessToken)
 
   const { get: getBooks, remove, post, patch } = useApi('books');
   ({ get: getRelated.authors } = useApi('authors'));
   ({ get: getRelated.categories } = useApi('categories'));
 
   const getBook = useCallback(async () => {
-    const data = await getBooks(null, id);
+    const data = await getBooks(null, id, {accessToken});
     setData(data);
 
     if (id) {
       const promises = structuredClone(relatedEntities);
+      console.log("rel:", relatedEntities)
       for (const entity in relatedEntities) {
         if (data[entity]?.length) {
           for (const entityId of data[entity]) {
@@ -41,6 +43,7 @@ export function useBookApi(id, shouldRequestOnLoad = true) {
     }
     return data;
   }, [id, getBooks]);
+
 
   useEffect(() => {
     if (shouldRequestOnLoad) {

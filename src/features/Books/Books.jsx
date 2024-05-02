@@ -8,12 +8,16 @@ import { useBookApi } from './useBookApi';
 import './Books.css'
 
 export function Books(){
+    // const { user } = useAuthContext();
+    // console.log("userrr", user)
     const { data: books } = useBookApi();
-    const { user } = useAuthContext();
+    
 
     useEffect(() => {
         // GetBooks().then((newBooks) => setBooks(newBooks));
+        console.log("books", books)
     },[]);
+
 
     return (
         <div className='big-container'>

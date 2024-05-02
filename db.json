@@ -41,6 +41,20 @@
       "firstName": "Maria",
       "lastName": "Carla",
       "id": 6
+    },
+    {
+      "email": "test@tester.com",
+      "password": "$2a$10$cq7l/acRdbyfXD7g8VYOBeypPxmvZGfCvH65uIt0KtsjuEIwf09gi",
+      "firstName": "user",
+      "lastName": "admin",
+      "id": 7
+    },
+    {
+      "email": "matei@andrei.com",
+      "password": "$2a$10$1Izm/o05xc7b1p24sZP9x.axpf0r0bVXk9KRFFaN66.sps30uYrbO",
+      "firstName": "Matei",
+      "lastName": "Andrei",
+      "id": 8
     }
   ],
   "categories": [
